@@ -167,17 +167,4 @@ public class MaxHeap<E extends Comparable<E>> extends ArrayList<E>   {
             this.addHeap(item);
         }
     }
-
-    public static void main(String[] args) {
-        MaxHeap<Integer> heap = new MaxHeap<Integer>();
-        List<Integer> l = Arrays.asList(5,6,7,14,15,13,10,15,1,4,13,30,2);
-        heap.buildHeap(l);
-
-        MaxHeap<Character> heap3 = new MaxHeap<>();
-        List<Character> l1 = Arrays.asList('a','b','c','e','z','e');
-        heap3.addHeap('b');
-        heap3.buildHeap(l1);
-
-        System.out.println(heap3.getMHeap());
-    }
 }
